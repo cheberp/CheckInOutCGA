@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CheckInOutCGA.View.ReportesPage"
+             xmlns:Vistas="clr-namespace:CheckInOutCGA.View"
+             NavigationPage.IconColor="#00A1E8"
+             NavigationPage.HasNavigationBar="False">
+     <Grid RowDefinitions=".20*,*,.20*">
+        <Vistas:VistaHeader Grid.Row="0" Padding="0"
+                            Margin="0"
+                            VerticalOptions="Start"
+                            TranslationY="-20"
+                            HorizontalOptions="Fill"/>
+        <StackLayout Grid.Row="1"
+                     Margin="5"
+                     Spacing="20">
+            <Frame BackgroundColor="{AppThemeBinding Light={StaticResource White}
+                   ,Dark={StaticResource Black}}"
+                   Padding="0">
+                <Picker Title="Selecciona un periodo"
+                        FontSize="25"
+                        TitleColor="{AppThemeBinding
+                        Light={StaticResource PrimaryCGAW}
+                        ,Dark={StaticResource PrimaryCGAB}}"
+                        />
+            </Frame>
+            <Label 
+            Text="Selecciona un reporte:"
+            VerticalTextAlignment="Center" 
+            HorizontalOptions="Center"/>
+            <Grid ColumnDefinitions=".10,.3*,.3*,.3*,10"
+                  RowDefinitions="30,20"
+                      ColumnSpacing="10"
+                      RowSpacing="5"
+                      RadioButtonGroup.GroupName="Reportes"
+                      >
+                    <Label Text="Ausentismos"
+                           Grid.Column="1"
+                           HorizontalOptions="Center"/>
+                    <RadioButton x:Name="rbtnAusentismo"
+                                 Grid.Column="1"
+                                 Grid.Row="1"
+                                 Value="System"
+                                 HorizontalOptions="Center"/>
+                    <Label Text="Extra"
+                           Grid.Column="2"
+                           HorizontalOptions="Center" />
+                    <RadioButton x:Name="rbtnExtra"
+                                 Grid.Column="2"
+                                 Value="Light"
+                                 Grid.Row="1"
+                                 HorizontalOptions="Center" />
+                    <Label Text="Vacaciones"
+                           Grid.Column="3"
+                           HorizontalOptions="Center" />
+                    <RadioButton x:Name="rbtnVacaciones"
+                                 Grid.Column="3"
+                                 Value="Dark"
+                                 Grid.Row="1"
+                                 HorizontalOptions="Center"
+                                 />
+                </Grid>
+            <CollectionView HeightRequest="300"/>
+        </StackLayout>
+        <Vistas:VistaBoth Grid.Row="2"
+                          Padding="0"
+                          Margin="0" 
+                          VerticalOptions="Start"
+                          HorizontalOptions="End"/>
+    </Grid>
+</ContentPage>

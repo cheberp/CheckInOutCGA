@@ -1,0 +1,1 @@
+C:\Users\carlo\source\repos\CheckInOutCGA\CheckInOutCGA\CheckInOutCGA.csproj;x64

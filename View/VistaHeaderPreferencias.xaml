@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CheckInOutCGA.View.VistaHeaderPreferencias">
+    <Grid ColumnDefinitions=".5*,.5*" HeightRequest="130"
+          Margin="0,0,0,0" Padding="0">
+        <Image Source="https://i.ibb.co/B28SbSg/bjcga1-50-removebg.png"
+               Rotation="180" Margin="0" HorizontalOptions="Start"
+               VerticalOptions="Start" HeightRequest="150"
+               WidthRequest="150" Grid.Column="0"
+               TranslationY="-20" Scale="1.2"/>
+        <Grid Grid.Column="1" VerticalOptions="Start"
+              HorizontalOptions="End"
+              Margin="0"
+              HeightRequest="40"
+              WidthRequest="100"
+              ColumnDefinitions="100,50"
+              ColumnSpacing="10"
+              Padding="0">
+            <Label Grid.Column="0"
+                   Text="Menu"
+                   VerticalOptions="Center"
+                   FontSize="20"
+                   HorizontalTextAlignment="Start"/>
+            <Image
+                Source="regresar.png"
+                VerticalOptions="Center"
+                HorizontalOptions="End"
+                Scale=".6"
+                Rotation="180"
+                HeightRequest="50"
+                WidthRequest="60"
+                Grid.Column="0"
+                />
+            <Grid.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped">
+                </TapGestureRecognizer>
+            </Grid.GestureRecognizers>
+        </Grid>
+    </Grid>
+</ContentView>
+

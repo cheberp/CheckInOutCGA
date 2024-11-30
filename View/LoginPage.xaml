@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CheckInOutCGA.View.LoginPage"
+             Title="{Binding Title}"
+             xmlns:Vistas="clr-namespace:CheckInOutCGA.View"
+             Shell.FlyoutItemIsVisible="False"
+             Shell.NavBarIsVisible="False"
+             NavigationPage.HasNavigationBar="False">
+<Grid RowDefinitions=".20*,*,.20*">
+        <Vistas:VistaHeaderInicio Grid.Row="0" Padding="0"
+                            Margin="0"
+                            VerticalOptions="Start"
+                            TranslationY="-70"
+                            HorizontalOptions="Fill"
+                            />
+        <Grid Grid.Row="1"
+              Padding="0"
+              RowDefinitions="auto,*,*,auto,30"
+              ColumnDefinitions="auto,*"
+              RowSpacing="0"
+              Margin="20,100,20,0"
+              VerticalOptions="Start">
+                <Label Text="Check In-Out"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"
+                       HorizontalTextAlignment="Center"
+                       FontSize="40"
+                       FontAttributes="Bold"
+                       Grid.ColumnSpan="2"
+                       FontFamily="OpenSansBold"
+                       Margin="0,0,0,0"
+                       TranslationY="-50"/>
+                <Label Text="Usuario:"
+                       VerticalOptions="Center" 
+                       FontAttributes="Bold"
+                       Grid.Column="0"
+                       HorizontalOptions="End"
+                       FontAutoScalingEnabled="False"
+                       Grid.Row="1"
+                       Margin="0,20,0,20"/>
+                <Entry BackgroundColor="Transparent" 
+                       Placeholder="Ingrese usuario"
+                       TextColor="#828282"
+                       PlaceholderColor="#625D5D"
+                       Grid.Row="1"
+                       Grid.Column="1"
+                       Margin="0,20,0,20"
+                       Text="{Binding Usuario}"/>
+                <Label Text="Contraseña:"
+                   VerticalOptions="Center"
+                   FontAttributes="Bold"
+                   Grid.Column="0"
+                   Grid.Row="2"
+                   HorizontalOptions="End"
+                   Margin="0,20,0,0"/>
+                <Entry BackgroundColor="Transparent" 
+                       Placeholder="Ingrese contraseña"
+                       TextColor="#828282"
+                       IsPassword="{Binding IsPassword}"
+                       PlaceholderColor="#625D5D"
+                       Text="{Binding Password}"
+                       Grid.Column="1"
+                       Grid.Row="2"
+                       Margin="0,20,0,0"/>
+                 <ImageButton Source="{Binding OcultarContrasena}"
+                       Grid.Column="1"
+                       Grid.Row="2"
+                       HeightRequest="35"
+                       WidthRequest="30"
+                       HorizontalOptions="End"
+                       Command="{Binding Vercontrasenacommand}"
+                       VerticalOptions="End"/>
+                <Button CornerRadius=" 20"
+                Text="Inicio" 
+                Margin=" 10,50,10,20"
+                Command="{Binding Logincommand}"
+                Opacity=".9"
+                Grid.Row="3"
+                Grid.ColumnSpan="2"/>
+                <Label Text="Olvidar datos del dispositivo"
+                       Grid.Row="4"
+                       Grid.ColumnSpan="2"
+                       FontSize="14"
+                       HorizontalTextAlignment="Center"
+                       TextDecorations="Underline"
+                       FontAttributes="Bold">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped">
+                        </TapGestureRecognizer>
+                    </Label.GestureRecognizers>
+                </Label>
+
+        </Grid>
+        <Vistas:VistaBothInicio Grid.Row="2"
+                          Padding="0"
+                          Margin="0" 
+                          VerticalOptions="Start"
+                          HorizontalOptions="End"
+                          TranslationY="-30"/>
+    </Grid>
+</ContentPage>

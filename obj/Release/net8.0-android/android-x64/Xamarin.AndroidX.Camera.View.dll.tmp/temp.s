@@ -1,0 +1,462 @@
+.section .text
+	.balign 8
+jit_code_start:
+
+	.byte 144,144,144,144,144,144,144,144,144,144,144,144,144,144,144,144
+.section .text
+	.balign 8
+jit_code_end:
+
+	.byte 144,144,144,144
+.section .data.rel.ro
+	.balign 8
+method_addresses:
+	.local method_addresses
+	.type method_addresses,@object
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+call method_addresses
+method_addresses_end:
+
+.section .text
+	.balign 8
+unbox_trampolines:
+unbox_trampolines_end:
+
+	.long 0
+.section .text
+	.balign 8
+unbox_trampoline_addresses:
+
+	.long 0
+.section .text
+	.balign 8
+method_info_offsets:
+
+	.byte 95,1,0,0,10,0,0,0,36,0,0,0,2,0,0,0,0,0,10,0,20,0,30,0,40,0,50,0,60,0,70,0
+	.byte 80,0,90,0,100,0,110,0,120,0,130,0,140,0,150,0,160,0,170,0,180,0,190,0,200,0,210,0,220,0,230,0
+	.byte 240,0,250,0,4,1,14,1,24,1,34,1,44,1,54,1,64,1,74,1,84,1,94,1,0,0,0,0,0,0,0,0
+	.byte 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+	.byte 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+	.byte 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+	.byte 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+	.byte 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+	.byte 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+	.byte 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+	.byte 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+	.byte 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+	.byte 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+	.byte 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+.section .text
+	.balign 8
+method_flags_table:
+
+	.byte 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+	.byte 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+	.byte 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+	.byte 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+	.byte 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+	.byte 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+	.byte 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+	.byte 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+	.byte 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+	.byte 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+	.byte 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+.section .text
+	.balign 8
+extra_method_table:
+
+	.byte 11,0,0,0,11,0,0,0,4,0,0,0,2,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+	.byte 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+	.byte 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+	.byte 0,0,0,0,0,0,0,0,0,0,0,0
+.section .text
+	.balign 8
+extra_method_info_offsets:
+
+	.byte 0,0,0,0
+.section .text
+	.balign 8
+class_name_table:
+
+	.byte 73,0,0,0,0,0,8,0,0,0,0,0,0,0,33,0,0,0,29,0,0,0,0,0,0,0,0,0,0,0,1,0
+	.byte 74,0,0,0,0,0,0,0,0,0,0,0,0,0,16,0,77,0,0,0,0,0,0,0,0,0,0,0,0,0,21,0
+	.byte 76,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,0,0,0,0,0
+	.byte 0,0,31,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0
+	.byte 0,0,0,0,0,0,0,0,0,0,3,0,0,0,25,0,0,0,0,0,0,0,19,0,79,0,23,0,0,0,0,0
+	.byte 0,0,17,0,0,0,28,0,0,0,0,0,0,0,24,0,0,0,4,0,0,0,0,0,0,0,0,0,0,0,30,0
+	.byte 0,0,5,0,73,0,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,12,0,0,0,26,0
+	.byte 0,0,0,0,0,0,0,0,0,0,10,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11,0,0,0,0,0
+	.byte 0,0,0,0,0,0,18,0,75,0,0,0,0,0,0,0,0,0,13,0,0,0,0,0,0,0,14,0,0,0,0,0
+	.byte 0,0,0,0,0,0,9,0,0,0,15,0,0,0,20,0,0,0,22,0,0,0,27,0,78,0,32,0,0,0,34,0
+	.byte 0,0
+.section .text
+	.balign 8
+got_info_offsets:
+
+	.byte 24,0,0,0,10,0,0,0,3,0,0,0,2,0,0,0,0,0,10,0,20,0,1,2,1,1,1,1,1,1,1,2
+	.byte 14,2,2,2,3,2,2,2,2,2,36,2,3,3
+.section .text
+	.balign 8
+ex_info_offsets:
+
+	.byte 95,1,0,0,10,0,0,0,36,0,0,0,2,0,0,0,0,0,10,0,20,0,30,0,40,0,50,0,60,0,70,0
+	.byte 80,0,90,0,100,0,110,0,120,0,130,0,140,0,150,0,160,0,170,0,180,0,190,0,200,0,210,0,220,0,230,0
+	.byte 240,0,250,0,4,1,14,1,24,1,34,1,44,1,54,1,64,1,74,1,84,1,94,1,0,0,0,0,0,0,0,0
+	.byte 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+	.byte 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+	.byte 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+	.byte 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+	.byte 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+	.byte 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+	.byte 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+	.byte 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+	.byte 0,0,0,0,0

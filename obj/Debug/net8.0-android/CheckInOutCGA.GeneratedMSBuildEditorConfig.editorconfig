@@ -1,0 +1,147 @@
+is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = true
+build_property.EnableSingleFileAnalyzer = true
+build_property.EnableTrimAnalyzer = false
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.IncludeAllContentForSelfExtract = 
+build_property.TargetFramework = net8.0-android
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = CheckInOutCGA
+build_property.ProjectDir = C:\Users\carlo\source\repos\CheckInOutCGA\CheckInOutCGA\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+
+[C:/Users/carlo/source/repos/CheckInOutCGA/CheckInOutCGA/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CheckInOutCGA.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[C:/Users/carlo/source/repos/CheckInOutCGA/CheckInOutCGA/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CheckInOutCGA.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[C:/Users/carlo/source/repos/CheckInOutCGA/CheckInOutCGA/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CheckInOutCGA.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
+
+[C:/Users/carlo/source/repos/CheckInOutCGA/CheckInOutCGA/Resources/Styles/CollectionViewStyle.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CheckInOutCGA.Resources.Styles.CollectionViewStyle.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\CollectionViewStyle.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\CollectionViewStyle.xaml
+
+[C:/Users/carlo/source/repos/CheckInOutCGA/CheckInOutCGA/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CheckInOutCGA.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[C:/Users/carlo/source/repos/CheckInOutCGA/CheckInOutCGA/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CheckInOutCGA.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+
+[C:/Users/carlo/source/repos/CheckInOutCGA/CheckInOutCGA/View/ChacarQRPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CheckInOutCGA.View.ChacarQRPage.xaml
+build_metadata.AdditionalFiles.TargetPath = View\ChacarQRPage.xaml
+build_metadata.AdditionalFiles.RelativePath = View\ChacarQRPage.xaml
+
+[C:/Users/carlo/source/repos/CheckInOutCGA/CheckInOutCGA/View/Checador.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CheckInOutCGA.View.Checador.xaml
+build_metadata.AdditionalFiles.TargetPath = View\Checador.xaml
+build_metadata.AdditionalFiles.RelativePath = View\Checador.xaml
+
+[C:/Users/carlo/source/repos/CheckInOutCGA/CheckInOutCGA/View/FlyoutMenuPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CheckInOutCGA.View.FlyoutMenuPage.xaml
+build_metadata.AdditionalFiles.TargetPath = View\FlyoutMenuPage.xaml
+build_metadata.AdditionalFiles.RelativePath = View\FlyoutMenuPage.xaml
+
+[C:/Users/carlo/source/repos/CheckInOutCGA/CheckInOutCGA/View/Flyoutpage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CheckInOutCGA.View.Flyoutpage.xaml
+build_metadata.AdditionalFiles.TargetPath = View\Flyoutpage.xaml
+build_metadata.AdditionalFiles.RelativePath = View\Flyoutpage.xaml
+
+[C:/Users/carlo/source/repos/CheckInOutCGA/CheckInOutCGA/View/InicioPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CheckInOutCGA.View.InicioPage.xaml
+build_metadata.AdditionalFiles.TargetPath = View\InicioPage.xaml
+build_metadata.AdditionalFiles.RelativePath = View\InicioPage.xaml
+
+[C:/Users/carlo/source/repos/CheckInOutCGA/CheckInOutCGA/View/LoginPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CheckInOutCGA.View.LoginPage.xaml
+build_metadata.AdditionalFiles.TargetPath = View\LoginPage.xaml
+build_metadata.AdditionalFiles.RelativePath = View\LoginPage.xaml
+
+[C:/Users/carlo/source/repos/CheckInOutCGA/CheckInOutCGA/View/PreferenciasPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CheckInOutCGA.View.PreferenciasPage.xaml
+build_metadata.AdditionalFiles.TargetPath = View\PreferenciasPage.xaml
+build_metadata.AdditionalFiles.RelativePath = View\PreferenciasPage.xaml
+
+[C:/Users/carlo/source/repos/CheckInOutCGA/CheckInOutCGA/View/PrincipalPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CheckInOutCGA.View.PrincipalPage.xaml
+build_metadata.AdditionalFiles.TargetPath = View\PrincipalPage.xaml
+build_metadata.AdditionalFiles.RelativePath = View\PrincipalPage.xaml
+
+[C:/Users/carlo/source/repos/CheckInOutCGA/CheckInOutCGA/View/ReportesPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CheckInOutCGA.View.ReportesPage.xaml
+build_metadata.AdditionalFiles.TargetPath = View\ReportesPage.xaml
+build_metadata.AdditionalFiles.RelativePath = View\ReportesPage.xaml
+
+[C:/Users/carlo/source/repos/CheckInOutCGA/CheckInOutCGA/View/TiemposPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CheckInOutCGA.View.TiemposPage.xaml
+build_metadata.AdditionalFiles.TargetPath = View\TiemposPage.xaml
+build_metadata.AdditionalFiles.RelativePath = View\TiemposPage.xaml
+
+[C:/Users/carlo/source/repos/CheckInOutCGA/CheckInOutCGA/View/VistaBoth.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CheckInOutCGA.View.VistaBoth.xaml
+build_metadata.AdditionalFiles.TargetPath = View\VistaBoth.xaml
+build_metadata.AdditionalFiles.RelativePath = View\VistaBoth.xaml
+
+[C:/Users/carlo/source/repos/CheckInOutCGA/CheckInOutCGA/View/VistaBothInicio.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CheckInOutCGA.View.VistaBothInicio.xaml
+build_metadata.AdditionalFiles.TargetPath = View\VistaBothInicio.xaml
+build_metadata.AdditionalFiles.RelativePath = View\VistaBothInicio.xaml
+
+[C:/Users/carlo/source/repos/CheckInOutCGA/CheckInOutCGA/View/VistaHeader.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CheckInOutCGA.View.VistaHeader.xaml
+build_metadata.AdditionalFiles.TargetPath = View\VistaHeader.xaml
+build_metadata.AdditionalFiles.RelativePath = View\VistaHeader.xaml
+
+[C:/Users/carlo/source/repos/CheckInOutCGA/CheckInOutCGA/View/VistaHeaderInicio.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CheckInOutCGA.View.VistaHeaderInicio.xaml
+build_metadata.AdditionalFiles.TargetPath = View\VistaHeaderInicio.xaml
+build_metadata.AdditionalFiles.RelativePath = View\VistaHeaderInicio.xaml
+
+[C:/Users/carlo/source/repos/CheckInOutCGA/CheckInOutCGA/View/VistaHeaderPreferencias.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CheckInOutCGA.View.VistaHeaderPreferencias.xaml
+build_metadata.AdditionalFiles.TargetPath = View\VistaHeaderPreferencias.xaml
+build_metadata.AdditionalFiles.RelativePath = View\VistaHeaderPreferencias.xaml

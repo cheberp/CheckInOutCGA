@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CheckInOutCGA.View.PreferenciasPage"
+             Title="Preferencias"
+             xmlns:Vistas="clr-namespace:CheckInOutCGA.View"
+             NavigationPage.HasNavigationBar="False">
+   <Grid RowDefinitions=".15*,*,.20*">
+        <Vistas:VistaHeader Grid.Row="0" Padding="0"
+                            Margin="0"
+                            VerticalOptions="Start"
+                            HorizontalOptions="Fill"
+                            TranslationY="-20"/>
+        <StackLayout Grid.Row="1">
+                <Label Text="Tema"
+                       Style="{StaticResource LabelTitle}"
+                       VerticalOptions="Center"
+                       HorizontalOptions="Center"
+                       FontAttributes="Bold"
+                       Margin="0,0,0,20"/>
+                <Grid ColumnDefinitions=".05*,.3*,.3*,.3*,.05*"
+                      RowDefinitions="auto,auto"
+                      ColumnSpacing="10"
+                      RowSpacing="5"
+                      RadioButtonGroup.GroupName="Themes"
+                      >
+                    <Label Text="Sistema"
+                           Grid.Column="1"
+                           HorizontalOptions="Center"/>
+                    <RadioButton x:Name="rbtnSystem"
+                                 Grid.Column="1"
+                                 Grid.Row="1"
+                                 CheckedChanged="rbtnSystem_CheckedChanged"
+                                 Value="System"
+                                 HorizontalOptions="Center"/>
+                    <Label Text="Claro"
+                           Grid.Column="2"
+                           HorizontalOptions="Center" />
+                    <RadioButton x:Name="rbtnLight"
+                                 Grid.Column="2"
+                                 CheckedChanged="rbtnSystem_CheckedChanged"
+                                 Value="Light"
+                                 Grid.Row="1"
+                                 HorizontalOptions="Center" />
+                    <Label Text="Oscuro"
+                           Grid.Column="3"
+                           HorizontalOptions="Center" />
+                    <RadioButton x:Name="rbtnDark"
+                                 Grid.Column="3"
+                                 CheckedChanged="rbtnSystem_CheckedChanged"
+                                 Value="Dark"
+                                 Grid.Row="1"
+                                 HorizontalOptions="Center"
+                                 />
+                </Grid>
+                <StackLayout Margin="20,50,20,20"
+                             Spacing="10">
+                    <Label Text="Cambiar contraseña"
+                           VerticalOptions="Center"
+                           HorizontalOptions="Center"
+                           Style="{StaticResource LabelTitle}"
+                           Margin="0,0,0,10" />
+                    <Grid ColumnDefinitions=".5*,*">
+                        <Label Text="Anterior    :"
+                               VerticalOptions="Center" />
+                        <Entry  Placeholder="Escriba contraseña"
+                                IsPassword="{Binding IsPassword}"
+                                Text="{Binding AnteriorCn}"
+                                HorizontalOptions="Fill"
+                                VerticalOptions="Center"
+                                Grid.Column="1" />
+                    </Grid>
+                    <Grid ColumnDefinitions=".5*,*">
+                        <Label Text="Nueva       :"
+                               VerticalOptions="Center" />
+                        <Entry  Placeholder="Escriba contraseña nueva"
+                                IsPassword="{Binding IsPassword}"
+                                Text="{Binding NuevaCn}"
+                                HorizontalOptions="Fill"
+                                VerticalOptions="Center"
+                                Grid.Column="1" />
+                    </Grid>
+                    <Grid ColumnDefinitions=".5*,*">
+                        <Label Text="Confirmar :"
+                               VerticalOptions="Center" />
+                        <Entry  Placeholder="Confirme contraseña nueva"
+                                IsPassword="{Binding IsPassword}"
+                                Text="{Binding ConfirmarCn}"
+                                HorizontalOptions="Fill"
+                                VerticalOptions="Center"
+                                Grid.Column="1" />
+                    </Grid>
+                    <Grid HorizontalOptions="End" WidthRequest="80">
+                        <Label Text="Ver" HorizontalOptions="Start"
+                               VerticalOptions="Center"
+                               />
+                        <ImageButton Source="{Binding OcultarContrasena}"
+                                     HeightRequest="35"
+                                     WidthRequest="35"
+                                     HorizontalOptions="End"
+                                     Command="{Binding Vercontrasenacommand}" />
+                    </Grid>
+                <Grid ColumnDefinitions="*,40">
+                    <Label Text="Uso de Huella" VerticalOptions="Center"
+                           Grid.Column="0"/>
+                    <Switch OnColor="{AppThemeBinding Light={StaticResource TertiaryCGAW},Dark={StaticResource TertiaryCGAB}}"
+                            ThumbColor="{AppThemeBinding Light={StaticResource PrimaryCGAW},Dark={StaticResource SecondaryCGAB}}"
+                            IsToggled="{Binding UsoHuella}" Grid.Column="1"
+                            Toggled="Switch_ToggledAsync"
+                            />
+                </Grid>
+                    <Button Text="Cambiar contraseña"
+                            HorizontalOptions="Fill"
+                            Command="{Binding ValidarNuevaCncommand}"/>
+                    <Button Text="Cerrar Sesión"
+                            HorizontalOptions="Center"
+                            Command="{Binding Salircommand}"/>
+                </StackLayout>
+        </StackLayout>
+        <Vistas:VistaBoth Grid.Row="2"
+                          Padding="0"
+                          Margin="0" 
+                          VerticalOptions="Start"
+                          HorizontalOptions="End"/>
+    </Grid>
+</ContentPage>

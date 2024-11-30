@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<FlyoutPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CheckInOutCGA.View.Flyoutpage"
+             xmlns:local="clr-namespace:CheckInOutCGA.View"
+             FlyoutLayoutBehavior="Default"
+             FlyoutItem.IsVisible="False"
+             NavigationPage.HasNavigationBar="False"
+             NavigationPage.HasBackButton="False"
+             NavigationPage.BackButtonTitle="Salir">
+    <FlyoutPage.Flyout>
+        <local:FlyoutMenuPage x:Name="flyoutPage" />
+    </FlyoutPage.Flyout>
+    <FlyoutPage.Detail>
+        <NavigationPage>
+            <x:Arguments>
+                <local:Checador />
+            </x:Arguments>
+        </NavigationPage>
+    </FlyoutPage.Detail>
+</FlyoutPage>

@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:cam="clr-namespace:Camera.MAUI;assembly=Camera.MAUI"
+             x:Class="CheckInOutCGA.View.ChacarQRPage"
+             xmlns:Vistas="clr-namespace:CheckInOutCGA.View"
+             NavigationPage.IconColor="#00A1E8"
+             NavigationPage.HasNavigationBar="False"
+             >
+    <Grid RowDefinitions=".20*,*,.20*">
+        <Vistas:VistaHeader Grid.Row="0" Padding="0"
+                            Margin="0"
+                            HorizontalOptions="Fill"
+                            VerticalOptions="Start"
+                            TranslationY="-20"
+                            />
+        <StackLayout Grid.Row="1"
+                     Margin="10">
+            <Button Text="Lectura de QR"
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Center"
+                    CornerRadius="20"
+                    Command="{Binding CommandLeerQR}"/>
+            <cam:CameraView x:Name="camview" WidthRequest="300" HeightRequest="200"
+                            CamerasLoaded="camview_CamerasLoaded" BarCodeDetectionEnabled="True"
+                            BarcodeDetected="camview_BarcodeDetected"/>
+            <Label x:Name="BrResult" Text="Buscando..." FontSize="Title"/>
+        </StackLayout>
+        <Vistas:VistaBoth Grid.Row="2"
+                          Padding="0"
+                          Margin="0" 
+                          HorizontalOptions="Fill"
+                          VerticalOptions="Start"/>
+    </Grid>
+</ContentPage>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                

@@ -1,0 +1,77 @@
+﻿<?xaml-comp compile="true" ?>
+<ResourceDictionary  xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+            <DataTemplate x:Key="Menu">
+                <Grid Padding="5,10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="30"/>
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Image Source="{Binding IconSource}" />
+                    <Label Grid.Column="1"
+                           Margin="20,0"
+                           Text="{Binding Title}"
+                           FontSize="20"
+                           FontAttributes="Bold"
+                           VerticalOptions="Center" />
+                </Grid>
+            </DataTemplate>
+            <DataTemplate x:Key="Checadas">
+                 <Grid ColumnDefinitions="*,.45*">
+                     <Label Text="{Binding FECHA}"
+                                   FontSize="Small"
+                                   Grid.Column="0"/>
+                     <Label Text="{Binding UBICACION}"
+                                   Grid.Column="1"
+                                   FontSize="Small"
+                                   HorizontalTextAlignment="Start"/>
+                 </Grid>
+            </DataTemplate>
+            <DataTemplate x:Key="encabezadochecadas">
+                        <Grid ColumnDefinitions=".4*,.5*"
+                              IsVisible="{Binding MuestraChecadas}"
+                              Margin="0,20,0,0">
+                            <Label Text="Checadas"
+                                   Grid.ColumnSpan="2" />
+                            <Label Text="Fecha"
+                                   Margin="0,0,0,0"
+                                   VerticalOptions="Center"
+                                   HorizontalOptions="Start"
+                                   Grid.Column="0"
+                                   Grid.Row="1" />
+                        <Label Text="Ubicacion"
+                                   Margin="20,0,0,0"
+                                   VerticalOptions="Center"
+                                   HorizontalOptions="Start"
+                                   Grid.Column="1"
+                                   Grid.Row="1" />
+                  </Grid>
+            </DataTemplate>
+            <DataTemplate x:Key="Tiempos" >
+                        <Grid RowDefinitions="20,20,20"
+                              ColumnDefinitions=".4*,.30*,.30*"
+                              RowSpacing="0"
+                              Margin="0,0,0,10">
+                            <Label Text="{Binding ENTRADA,StringFormat='Entrada:{0}'}"
+                                   FontSize="16"
+                                   Grid.ColumnSpan="2" />
+                            <Label Text="{Binding SALIDA,StringFormat='Salida:{0}'}"
+                                   Grid.Row="1"
+                                   FontSize="16"
+                                   Grid.ColumnSpan="2" />
+                            <Label Text="{Binding CHECADAS,StringFormat='Checadas: {0}'}"
+                                   Grid.Row="2"
+                                   FontSize="16"
+                                   Grid.ColumnSpan="3"/>
+                            <Label Text="{Binding HORAS,StringFormat='Horas: {0}'}"
+                                   Grid.Row="1"
+                                   Grid.Column="2"
+                                   FontSize="16"/>
+                            <Label Text="{Binding HORARIO,StringFormat='Horario: {0}'}"
+                                   Grid.Row="0"
+                                   Grid.Column="2"
+                                   FontSize="16" />
+                        </Grid>
+                    </DataTemplate>
+</ResourceDictionary>

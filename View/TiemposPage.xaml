@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CheckInOutCGA.View.TiemposPage"
+             xmlns:Vistas="clr-namespace:CheckInOutCGA.View"
+             NavigationPage.IconColor="#00A1E8"
+             Shell.FlyoutItemIsVisible="False"
+             Shell.NavBarIsVisible="False"
+             NavigationPage.HasNavigationBar="False">
+    <Grid RowDefinitions=".15*,*,.15*">
+        <Vistas:VistaHeader Grid.Row="0" Padding="0"
+                            Margin="0"
+                            VerticalOptions="Start"
+                            HorizontalOptions="Fill"
+                            TranslationY="-20"
+                            />
+        <StackLayout Margin="10,10,10,10"
+                     Spacing="0"
+                     Grid.Row="1">
+            <Label Text="{Binding Periodo}" Style="{StaticResource LabelTitle}"/>
+            <Label Text="{Binding Nombre,StringFormat='Nombre: {0}'}"
+                   Style="{StaticResource LabelTitle}"/>
+            <Button Text="Calcular Tiempos"
+                    Command="{Binding CalculaTiemposCommand}"
+                    IsEnabled="{Binding IsEnable}"/>
+            <ActivityIndicator IsVisible="{Binding IsBusy}"
+                               IsRunning="{Binding IsBusy}"/>
+            <CollectionView ItemsSource="{Binding Tiempos}"
+                            >
+                <CollectionView.ItemTemplate >
+                    <DataTemplate >
+                        <Grid RowDefinitions="20,20,20"
+                              ColumnDefinitions=".4*,.30*,.30*"
+                              RowSpacing="0"
+                              Margin="0,0,0,10">
+                            <Label Text="{Binding ENTRADA,StringFormat='Entrada:{0}'}"
+                                   FontSize="16"
+                                   Grid.ColumnSpan="2" />
+                            <Label Text="{Binding SALIDA,StringFormat='Salida:{0}'}"
+                                   Grid.Row="1"
+                                   FontSize="16"
+                                   Grid.ColumnSpan="2" />
+                            <Label Text="{Binding CHECADAS,StringFormat='Checadas: {0}'}"
+                                   Grid.Row="2"
+                                   FontSize="16"
+                                   Grid.ColumnSpan="3"/>
+                            <Label Text="{Binding HORAS,StringFormat='Horas: {0}'}"
+                                   Grid.Row="1"
+                                   Grid.Column="2"
+                                   FontSize="16"/>
+                            <Label Text="{Binding HORARIO,StringFormat='Horario: {0}'}"
+                                   Grid.Row="0"
+                                   Grid.Column="2"
+                                   FontSize="16" />
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </StackLayout>
+        <Vistas:VistaBoth Grid.Row="2"
+                          Padding="0"
+                          Margin="0" 
+                          VerticalOptions="Start"
+                          HorizontalOptions="End"
+                          TranslationY="-10"/>  
+    </Grid>
+</ContentPage>

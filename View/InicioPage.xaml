@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CheckInOutCGA.View.InicioPage"
+             xmlns:Vistas="clr-namespace:CheckInOutCGA.View"
+             Title="{Binding Title}"
+             NavigationPage.HasNavigationBar="False">
+<Grid RowDefinitions=".08*,*,.08*">
+        <Vistas:VistaHeader Grid.Row="0" Padding="0"
+                            Margin="0"
+                            VerticalOptions="Start"
+                            TranslationY="-20"
+                            HorizontalOptions="Fill"
+                            />
+        <VerticalStackLayout Margin="20"
+                         Padding="0"
+                         Spacing="10"
+                         Grid.Row="1">
+        
+        <Grid ColumnDefinitions="130,*"
+              Padding="0">
+            <Image Source="{Binding LogoEmpresa}"
+                   HeightRequest="100"
+                   WidthRequest="100"
+                   Grid.Column="0"/>
+           <Label 
+               Text="{Binding Empresa}"
+               VerticalOptions="Center" 
+               HorizontalOptions="Fill"
+               Grid.Column="1"
+               Style="{StaticResource LabelTitle}"/>
+
+        </Grid>
+        <Image Source="{Binding FotoEmpleado}"
+               HeightRequest="150"
+               WidthRequest="150"
+               Margin="0,0,10,0"
+               />
+        <Grid RowDefinitions="auto,auto,auto,auto,auto,auto"
+              ColumnDefinitions="110,*"
+              RowSpacing="10">
+        <Label Text="Empleado: "
+               HorizontalOptions="Fill"
+               Style="{StaticResource LabelTitle}"/>
+        <Label Text="{Binding Empleado}"
+               Grid.Column="1"
+               HorizontalOptions="Start"/>
+        <Label Text="Nombre: " Grid.Row="1"
+               HorizontalOptions="Fill"
+               Style="{StaticResource LabelTitle}"/>
+        <Label Text="{Binding Nombre}"
+               FontFamily="OpenSansRegular"
+               FontSize="20"
+               Grid.Row="1"
+               Grid.Column="1"
+               HorizontalOptions="Start"/>
+        <Label Text="Turno: " Grid.Row="2"
+               HorizontalOptions="Fill"
+               Style="{StaticResource LabelTitle}"/>
+        <Label Text="{Binding Turno}"
+               FontFamily="OpenSansRegular"
+               FontSize="20"
+               Grid.Row="2"
+               Grid.Column="1"
+               HorizontalOptions="Start"/>
+        <Label Text="Horario: " Grid.Row="3"
+               HorizontalOptions="Fill"
+               Style="{StaticResource LabelTitle}"/>
+        <Label Text="{Binding Horario}"
+               FontFamily="OpenSansRegular"
+               FontSize="20"
+               Grid.Row="3"
+               Grid.Column="1"
+               HorizontalOptions="Start"
+               />
+        <Label Text="Supervisor: " Grid.Row="4"
+               HorizontalOptions="Fill"
+               Style="{StaticResource LabelTitle}"/>
+        <Label Text="{Binding Supervisor}"
+               FontFamily="OpenSansRegular"
+               FontSize="20"
+               Grid.Row="4"
+               HorizontalOptions="Start"
+               Grid.Column="1"/>
+        <Label Text="Correo: " Grid.Row="5"
+               HorizontalOptions="Fill"
+               Style="{StaticResource LabelTitle}"/>
+        <Label Text="{Binding Correo}"
+               FontFamily="OpenSansRegular"
+               FontSize="20"
+               Grid.Row="5"
+               HorizontalOptions="Start"
+               Grid.Column="1"/>
+        </Grid>
+    </VerticalStackLayout>
+        <Vistas:VistaBoth Grid.Row="2"
+                          Padding="0"
+                          Margin="0" 
+                          VerticalOptions="Start"
+                          HorizontalOptions="Fill"
+                          TranslationY="-60"/>
+    </Grid> 
+</ContentPage>

@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="CheckInOutCGA.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:CheckInOutCGA.View"
+    Shell.FlyoutBehavior="Disabled"
+    Shell.NavBarIsVisible="False">
+
+    <ShellContent
+        Title="Login"
+        ContentTemplate="{DataTemplate local:LoginPage}"
+        Route="MainPage"
+        Shell.FlyoutItemIsVisible="True"
+        Shell.NavBarIsVisible="False"
+        NavigationPage.HasNavigationBar="False"
+        />
+
+    <FlyoutItem Title="Checador"
+                Icon="marcador.png">
+        <Tab Title="Inicio">
+            <ShellContent
+                Title="Inicio"
+                Route="Inicio"
+                
+                ContentTemplate="{DataTemplate local:PrincipalPage}"
+                />
+        </Tab>
+    </FlyoutItem>
+     <FlyoutItem Title="Checador QR"
+                 Icon="qr.png">
+        <Tab Title="QR">
+            <ShellContent
+                Title="QR"
+                Route="QR"
+                ContentTemplate="{DataTemplate local:PrincipalPage}"/>
+        </Tab>
+    </FlyoutItem>
+</Shell>
+
