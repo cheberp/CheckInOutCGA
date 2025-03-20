@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CheckInOutCGA")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+bccd2829527597126e9d64ecd0a6d56e8f46a81d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+14844587f59f3783e565669e0ba33cb5d505133d")]
 [assembly: System.Reflection.AssemblyProductAttribute("CheckInOutCGA")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CheckInOutCGA")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
